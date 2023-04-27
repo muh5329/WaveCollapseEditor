@@ -7,7 +7,7 @@ export default function Satellite(){
     useFrame((state, delta) =>
     {
         if (model != undefined && model.current != undefined){
-            const distanceToCenter = 10;
+            const distanceToCenter = 16;
             const time = state.clock.elapsedTime  * 0.5  ;
             model.current.position.x = Math.cos(  time )   * distanceToCenter; 
             model.current.position.y = Math.sin(  time )   * distanceToCenter; 
@@ -17,6 +17,6 @@ export default function Satellite(){
     })
 
     return <Suspense fallback={null}>
-            <Model ref={model} modelName="Satellite" scale="0.01" position_y={1} />
+            <Model ref={model} modelName="Satellite" scale="0.01" position_y={1.5} />
         </Suspense>
 }

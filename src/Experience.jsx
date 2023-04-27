@@ -1,10 +1,12 @@
 import { Text, Html, Loader, useGLTF, OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei'
 import React, { Suspense } from 'react'
+import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import { useControls } from 'leva' 
-import Model from './Model';
 import Earth from './Earth/Earth.jsx';
 import Satellite from './Earth/Satellite.jsx';
 import Moon from './Earth/Moon.jsx';
+import Spaceship from './Spaceships/Spaceship.jsx';
+import Lights from './Lights.jsx';
 export default function Experience()
 {
   const textProps = useControls('text ', {
@@ -17,15 +19,30 @@ export default function Experience()
         
         <color args={['#241a1a']} attach='background'  />
         <ambientLight intensity={0.75} />
-        <PerspectiveCamera makeDefault position={[0, 0, 16]} fov={75}>
-          <pointLight intensity={1} position={[-10, -25, -10]} />
-          <spotLight castShadow intensity={2.25} angle={0.2} penumbra={1} position={[-25, 20, -15]} shadow-mapSize={[1024, 1024]} shadow-bias={-0.0001} />
-        </PerspectiveCamera>
+        <PerspectiveCamera makeDefault position={[0, 0, 40]} fov={45}  />
        
-        <Earth/>
-        <Satellite />
-        <Moon />
-        <OrbitControls  enablePan={false}  />
+        <Suspense>
+          <Physics 
+            gravity={[0,0,0]} 
+            interpolation={false} 
+            colliders={false}
+            timeStep="vary"
+          >
+            <Lights />
+            <Earth/>
+            <Satellite />
+            <Moon />
+            <Spaceship/>
+          
+            
+
+          </Physics>
+        </Suspense>
+
+        
+
+        {/* enablePan={false} */}
+        <OrbitControls   />
         <Stars radius={500} depth={50} count={1000} factor={10} />
 
         <Text

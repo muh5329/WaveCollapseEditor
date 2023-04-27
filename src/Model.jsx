@@ -5,6 +5,11 @@ const Model = forwardRef( (props , ref) =>{
     var model = {};
     if (props.modelName != undefined){
          model = useGLTF(`./${props.modelName}.glb`);
+          // Cast model shadow
+          model.scene.traverse((child) => {
+            child.castShadow = true;
+            child.receiveShadow = true;
+            });
     }
     
     return (
