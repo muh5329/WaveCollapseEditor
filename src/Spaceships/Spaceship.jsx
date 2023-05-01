@@ -1,85 +1,73 @@
 import Model from '../Model';
-import { useFrame, useThree } from '@react-three/fiber'
-import { useRef, useState, useEffect, Suspense } from "react";
-import { useRapier, RigidBody } from "@react-three/rapier";
+import { useFrame } from '@react-three/fiber'
+import { useRef, Suspense } from "react";
 import { useKeyboardControls } from "@react-three/drei";
-import * as THREE from "three";
-
+import { InstancedRigidBodies, CylinderCollider ,BallCollider, CuboidCollider, Debug, Physics, RigidBody } from '@react-three/rapier'
+import * as THREE from 'three'
 
 export default function Spaceship(){
-    const { camera } = useThree();
     const model = useRef()
-    const bodyRef = useRef(null);
-
+    const modelBody = useRef();
     const [subscribeKeys, getKeys] = useKeyboardControls(); // see: https://github.com/pmndrs/drei#keyboardcontrols
-    // const { rapier, world } = useRapier();
+
    
-    const impulseStrength2 = 50;
-    const torqueStrength2 = 30;
     useFrame((state, delta) =>
     {
-        const { forward, backward, leftward, rightward } = getKeys();
+        if (modelBody.current){
 
-        const impulse = new THREE.Vector3(0, 0, 0);
-        const torque = new THREE.Vector3(0, 0, 0);
+            const time = state.clock.getElapsedTime()
 
-        const impulseStrength = impulseStrength2 * delta;
-        const torqueStrength = torqueStrength2 * delta;
+            const { forward, backward, leftward, rightward } = getKeys();
+           
+            const impulse = { x: 0 , y :0 , z: 0}
+            const torque = { x:0 , y :0 , z: 0}
 
-        if (forward) {
-            impulse.z = -1;
-            torque.x = -1;
+            const impulseStrength =  10000 * delta
+            const torqueStrength = 10000 * delta
+            const dragForce = 1000;
+            if (forward){
+                impulse.z -=impulseStrength
+                torque.x -= torqueStrength
+            }
+    
+            if (rightward){
+                impulse.x +=impulseStrength
+                torque.z -= torqueStrength
+            }
+    
+            if (backward){
+                impulse.z +=impulseStrength
+                torque.x += torqueStrength
+            }
+    
+            if (leftward){
+                impulse.x -=impulseStrength
+                torque.z += torqueStrength
+            }
+
+            
+            
+            modelBody.current.applyImpulse(impulse)
+            modelBody.current.applyTorqueImpulse(torque)
         }
-        if (backward) {
-            impulse.z = 1;
-            torque.x = 1;
-        }
-        if (rightward) {
-            impulse.x = 1;
-            torque.z = -1;
-        }
-        if (leftward) {
-            impulse.x = -1;
-            torque.z = 1;
-        }
 
-        const { current: body } = bodyRef;
 
-        if (body && impulse.length() > 0) {
-            impulse.applyMatrix4(camera.matrixWorld).sub(camera.position);
-            impulse.setY(0);
-            impulse.normalize().setLength(impulseStrength);
-            // console.log("impulse", impulse);
-
-            body.applyImpulse(impulse);
-        }
-
-        if (body && torque.length() > 0) {
-            torque.applyMatrix4(camera.matrixWorld).sub(camera.position);
-            torque.setY(0);
-            torque.normalize().setLength(torqueStrength);
-            // console.log("torque", torque);
-
-            body.applyTorqueImpulse(torque);
-        }
-       
-        
     })
 
     return <Suspense fallback={null}>
         <RigidBody 
-        lockRotations={false}
-        ref={bodyRef}
-        colliders="ball"
-        position={[0, 1, 0]}
-        restitution={0.2}
-        friction={1}
-        linearDamping={0.5}
-        angularDamping={0.5}
+            colliders="ball"
+            gravityScale={0} 
+            ref={modelBody}
+            friction={1}
+            linearDamping={0.5}
+            angularDamping={0.5}
+            restitution={0.2}
+            position={[0, 20, 0]}
         >
-            <Model ref={model} modelName="Spaceship" scale="1" position_y={20} />
+            <Model ref={model} modelName="Spaceship" scale="1" />  
             
         </RigidBody>
-            
+           
     </Suspense>
 }

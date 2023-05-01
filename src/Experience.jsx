@@ -1,6 +1,6 @@
 import { Text, Html, Loader, useGLTF, OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei'
 import React, { Suspense } from 'react'
-import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
+import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import { useControls } from 'leva' 
 import Earth from './Earth/Earth.jsx';
 import Satellite from './Earth/Satellite.jsx';
@@ -16,17 +16,14 @@ export default function Experience()
 })
 
     return <>
-        
+         
         <color args={['#241a1a']} attach='background'  />
         <ambientLight intensity={0.75} />
         <PerspectiveCamera makeDefault position={[0, 0, 40]} fov={45}  />
        
         <Suspense>
           <Physics 
-            gravity={[0,0,0]} 
-            interpolation={false} 
-            colliders={false}
-            timeStep="vary"
+            
           >
             <Lights />
             <Earth/>
@@ -35,7 +32,7 @@ export default function Experience()
             <Spaceship/>
           
             
-
+            {/* <Debug /> */}
           </Physics>
         </Suspense>
 
