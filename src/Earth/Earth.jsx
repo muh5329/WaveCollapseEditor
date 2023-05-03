@@ -1,12 +1,13 @@
 import Model from '../Model';
 import { useFrame } from '@react-three/fiber'
-import React, { Suspense, useRef } from 'react'
-import { InstancedRigidBodies, CylinderCollider ,BallCollider, CuboidCollider, Debug, Physics, RigidBody } from '@react-three/rapier'
+import React, { Suspense, useRef , useEffect } from 'react'
+import { RigidBody } from '@react-three/rapier'
 import * as THREE from 'three'
-
+import useSpaceShip from '../Store/useSpaceShip';
 export default function Earth(){
     const earthModel = useRef()
     const modelBody = useRef();
+    const earth = useSpaceShip((state) => state.useSpaceShip)
     useFrame((state, delta) =>
     {
         if (earthModel != undefined && earthModel.current != undefined){
@@ -16,6 +17,27 @@ export default function Earth(){
             modelBody.current.setNextKinematicRotation(rotation);
         }
     })
+
+    const moveToEarth = () =>{
+
+    }
+    
+    useEffect(()=>{
+
+        const unsubscribeEarth = useSpaceShip.subscribe(
+            (state)=> state.planet,
+            (planet)=>{
+               if (planet === "earth")
+               moveToEarth();  
+            }
+
+        )   
+        return ()=>{
+           
+            unsubscribeEarth();
+        }
+
+    }, [])
 
     return <Suspense fallback={null}>
              <RigidBody ref={modelBody} type="kinematicPosition"  colliders="ball">

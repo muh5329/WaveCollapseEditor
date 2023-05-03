@@ -9,11 +9,11 @@ import Spaceship from './Spaceships/Spaceship.jsx';
 import Lights from './Lights.jsx';
 export default function Experience()
 {
-  const textProps = useControls('text ', {
-    position: [ -15.0, 10.6, -4.0],
-    rotation: [ 0.0, 0.0, 0.0]
+//   const textProps = useControls('text ', {
+//     position: [ -15.0, 10.6, -4.0],
+//     rotation: [ 0.0, 0.0, 0.0]
 
-})
+// })
 
     return <>
          
@@ -47,8 +47,11 @@ export default function Experience()
                     fontSize={2}
                     maxWidth={ 10}
                     textAlign='center'
-                    {...textProps}
-                > My Website !</Text> 
+                    position={[ -15.0, 10.6, -4.0]}
+                    rotation={ [ 0.0, 0.0, 0.0]}
+
+                    // {...textProps}
+                > Muneeb's Corner !</Text> 
 
 
     </>
