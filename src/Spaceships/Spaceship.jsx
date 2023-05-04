@@ -64,7 +64,7 @@ export default function Spaceship(){
             }
             
             if (boost){
-                impulse = impulseVector
+                impulse = impulseVector.multiplyScalar(1)
             }
 
             
@@ -78,17 +78,17 @@ export default function Spaceship(){
              */
             const bodyPosition = modelBody.current.translation()
         
+            // Position the camera behind the  player ship
             const cameraPosition = new THREE.Vector3();
-            cameraPosition.copy(bodyPosition);
-            cameraPosition.z += 40
-            cameraPosition.y += -0.65
+            cameraPosition.copy(impulseVector.negate().multiplyScalar(7).add(bodyPosition));
+           
     
             const cameraTarget =  new THREE.Vector3()
             cameraTarget.copy(bodyPosition);
             cameraTarget.y += 0.25
     
-            smoothCameraPosition.lerp(cameraPosition , 5 * delta);
-            smoothCameraTarget.lerp(cameraTarget ,5 * delta);
+            smoothCameraPosition.lerp(cameraPosition , 1 * delta);
+            smoothCameraTarget.lerp(cameraTarget ,1 * delta);
             
             if (cameraFollowShip){
                 state.camera.position.copy(smoothCameraPosition);
