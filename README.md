@@ -1,4 +1,4 @@
-# SpacePortfolio
+# Wave Collapse Algorithm Editor
 
 
 
