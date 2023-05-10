@@ -1,24 +1,45 @@
-import { Text, Html, Loader, useGLTF, OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei'
+import { Text, Html, Loader, useGLTF, OrbitControls, PerspectiveCamera, MapControls } from '@react-three/drei'
 import React, { Suspense } from 'react'
 import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import { useControls } from 'leva' 
-import Earth from './Earth/Earth.jsx';
-import Satellite from './Earth/Satellite.jsx';
-import Moon from './Earth/Moon.jsx';
-import Spaceship from './Spaceships/Spaceship.jsx';
+
 import Lights from './Lights.jsx';
 export default function Experience()
 {
-//   const textProps = useControls('text ', {
-//     position: [ -15.0, 10.6, -4.0],
-//     rotation: [ 0.0, 0.0, 0.0]
 
-// })
+    const gridDimensions = {x : 10, y: 10 , z: 10}
+    const cubeSize = 1;
+
+    const getGrids = gridDimensions => {
+      let content = [];
+      for (let x = 0 ; x <gridDimensions.x ; x++ ) {
+        for (let y = 0 ; y <gridDimensions.y ; y++ ) {
+          for (let z = 0 ; z  <gridDimensions.z ; z++ ) {
+                let xPos = x * cubeSize;
+                let yPos = y * cubeSize;
+                let zPos = z * cubeSize;
+                content.push(
+                  <mesh position={[ xPos, yPos, zPos]}>
+                    <boxGeometry args={[cubeSize, cubeSize, cubeSize]} />
+                    <meshBasicMaterial  wireframe/>
+                  </mesh>
+                
+                );
+          }
+        }
+      }
+      
+      
+      return content;
+    };
+
 
     return <>
          
         <color args={['#241a1a']} attach='background'  />
-        <ambientLight intensity={0.75} />
+        
+
+
         <PerspectiveCamera makeDefault position={[0, 0, 40]} fov={45}  />
        
         <Suspense>
@@ -26,33 +47,22 @@ export default function Experience()
             
           >
             <Lights />
-            <Earth/>
-            <Satellite />
-            <Moon />
-            <Spaceship/>
-          
-            
+           {getGrids(gridDimensions) }
+           
             {/* <Debug /> */}
           </Physics>
         </Suspense>
 
-        
-
-        {/* enablePan={false} */}
-        <OrbitControls   />
-        <Stars radius={500} depth={50} count={1000} factor={10} />
-
-        <Text
-                    font="./bangers-v20-latin-regular.woff"
-                    fontSize={2}
-                    maxWidth={ 10}
-                    textAlign='center'
-                    position={[ -15.0, 10.6, -4.0]}
-                    rotation={ [ 0.0, 0.0, 0.0]}
-
-                    // {...textProps}
-                > Muneeb's Corner !</Text> 
-
+        {/* <RaycastWhenCameraMoves /> */}
+        <gridHelper position-y={ - 1 } args={[100, 100]} />
+        <MapControls  
+          enableDamping={true}
+          dampingFactor={0.05}
+          screenSpacePanning={false}
+          minDistance={2}
+          maxDistance={80}
+          maxPolarAngle={ Math.PI / 2}
+        />
 
     </>
 }   
