@@ -1,0 +1,75 @@
+
+
+ 
+
+/**
+* model browser
+*/
+.browser
+{
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+}
+
+
+.browser .content
+{
+    display: flex;
+    justify-content: left;
+}
+
+.browser .left-nav
+{
+    width: 50px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 31px;
+    border: 2px solid #ffffff;
+
+}
+
+.browser .right-nav
+{
+    width: 50px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 8px;
+    border: 2px solid #ffffff;
+    
+}
+
+.browser .right-nav:hover {
+    background: #ffffff99;
+}
+.browser .left-nav:hover {
+    background: #ffffff99;
+}
+
+.browser .key
+{
+    width: 50px;
+    height: 40px;
+    margin: 4px;
+    border: 2px solid #ffffff;
+    
+}
+.browser .key.active
+{
+    background: #ffffff99;
+}
+
+.browser .key:hover {
+    background: #ffffff99;
+}
+
+.browser .icon
+{
+    margin: 5px;
+    width: 40px;
+    height: 30px;
+
+}
+
+  

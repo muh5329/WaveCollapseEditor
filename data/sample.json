@@ -1,0 +1,15 @@
+[{
+    "id": "",
+    "name":"",
+    "icon":"",
+    "file":"",
+    "connections":{
+        "xPos":[],
+        "xNeg":[],
+        "yPos":[],
+        "yNeg":[],
+        "zPos":[],
+        "zNeg":[]
+    }, 
+    "rotation": 1
+}]
