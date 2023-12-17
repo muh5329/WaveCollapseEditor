@@ -5,9 +5,7 @@ import Experience from './Experience.jsx'
 import { KeyboardControls } from '@react-three/drei'
 import { StrictMode } from 'react'
 import Interface from './Interface/Interface'
-
 const root = ReactDOM.createRoot(document.querySelector('#root'))
-
 root.render(
     <StrictMode>
         <KeyboardControls
@@ -20,6 +18,7 @@ root.render(
             ]}
         >
             <Canvas
+                    flat
                     camera={ {
                         fov: 45,
                         near: 0.1,

@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 const Model = forwardRef( (props , ref) =>{
     var model = {};
     if (props.modelName != undefined){
-         model = useGLTF(`./castle/${props.modelName}.glb`);
+         model = useGLTF(props.modelName);
           // Cast model shadow
           model.scene.traverse((child) => {
             child.castShadow = true;

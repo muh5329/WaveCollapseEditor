@@ -20,5 +20,11 @@ export default {
         outDir: '../dist',
         emptyOutDir: true,
         sourcemap: true
-    }
+    },
+    loaders: [
+        { 
+           json: /\.json$/, 
+           loader: 'json-loader' 
+        }
+    ]
 }

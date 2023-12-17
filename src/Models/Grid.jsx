@@ -5,6 +5,7 @@ import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import { useControls } from 'leva' 
 import { DoubleSide } from "three";
 import * as THREE from 'three'
+import SelectedModel from './SelectedModel';
 export default function Grid(){
 
 
@@ -33,7 +34,7 @@ export default function Grid(){
       if (cubeSpace[position.x ][position.y][position.z] == undefined){
         let key = position.x + "," + position.y  +","+position.z ;
        
-        let model = <mesh 
+        let model = <group 
             position={[ position.x, position.y , position.z]}  
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)} 
@@ -41,9 +42,8 @@ export default function Grid(){
             onContextMenu={onHandleLeftClick}
             key={key} 
           >
-            <boxGeometry />
-            <meshStandardMaterial color="purple"  />
-          </mesh>
+            <SelectedModel />
+          </group>
         cubeSpace[position.x][position.y][position.z] = position
         setModels(oldArray => [...oldArray, model]);
       
@@ -60,12 +60,11 @@ export default function Grid(){
      
 
         // If a model has been intersected, check to see which face of the model  / cube boundry has been clicked on
-       
-        const intersectionType = ctx.intersections[0].eventObject.geometry.type
+        const intersectionType = ctx.intersections[1].eventObject.geometry.type
         
         
         if (intersectionType != "PlaneGeometry"){
-          const intersectionPoint = ctx.intersections[0].point
+          const intersectionPoint = ctx.intersections[1].point
 
 
           // Determine which face has been clicked
@@ -160,7 +159,6 @@ export default function Grid(){
     return <>
         {getGrids(gridDimensions) }
         {models}
-        {/* <Model ref={earthModel} modelName="Earth" scale="0.2" position_y={-3.0} /> */}
     </>
 
 }

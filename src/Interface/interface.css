@@ -1,6 +1,9 @@
 
 
- 
+canvas
+{
+    touch-action:none
+}
 
 /**
 * model browser
@@ -10,7 +13,9 @@
     position: absolute;
     top: 2%;
     left: 0;
-    width: 100%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 
@@ -50,7 +55,7 @@
 .browser .key
 {
     width: 50px;
-    height: 40px;
+    height: 50px;
     margin: 4px;
     border: 2px solid #ffffff;
     
@@ -67,8 +72,8 @@
 .browser .icon
 {
     margin: 5px;
-    width: 40px;
-    height: 30px;
+    width: 35px;
+    height: 40px;
 
 }
 
