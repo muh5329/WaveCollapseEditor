@@ -68,6 +68,8 @@ export default function ModelLoader(){
     const selectModel = (e) =>{
         e.stopPropagation()
         const targetID = e.target.id
+        console.log(currentPage + "currentPage");
+        console.log(pageSize + "pageSize");
         const dataIndex = currentPage * pageSize + parseInt(targetID)
         setSelectedModel(targetID)
         setSelectedFile(data[dataIndex].file)

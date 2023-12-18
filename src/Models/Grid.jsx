@@ -56,60 +56,54 @@ export default function Grid(){
         ctx.stopPropagation()
         const obj = ctx.eventObject;
         const currPosition =  new THREE.Vector3()
+        const intersection = ctx.intersections[1] ? ctx.intersections[1] : ctx.intersections[0]
         currPosition.copy(obj.position)
      
-
         // If a model has been intersected, check to see which face of the model  / cube boundry has been clicked on
-        const intersectionType = ctx.intersections[1].eventObject.geometry.type
+        let position = ""
+        if (intersection.eventObject )
+          position = ctx.eventObject.position;
         
-        
-        if (intersectionType != "PlaneGeometry"){
-          const intersectionPoint = ctx.intersections[1].point
-
-
-          // Determine which face has been clicked
-          //  for our 1 by 1 by 1 cube, the plane clicked will be exaclty 0.5 either plus or minus
-          // from our clicked axis plane  rounded by 2 decimal points
-          
-          let faceMapPosition = {x: 0, y : 0 , z : 0};
+        if (position.y >= 0){
+          const intersectionPoint = intersection.point
+          var faceNormal = ctx.intersections[0].face.normal ;
+          var faceMapPosition = {x: 0, y : 0 , z : 0};
+         
           // Right
-          if (Math.round(intersectionPoint.x * 100) / 100   == currPosition.x + 0.5){
+          if (faceNormal.x  == 1){
            faceMapPosition = {x: 1, y : 0 , z : 0};
           } 
 
           // Left
-          if (Math.round(intersectionPoint.x * 100) / 100 == currPosition.x - 0.5 ){
+          if (faceNormal.x  == -1 ){
             faceMapPosition = {x: -1, y : 0 , z : 0};
           } 
 
           // Top
-          if (Math.round(intersectionPoint.y * 100) / 100 == currPosition.y + 0.5){
+          if (faceNormal.y  == 1){
             faceMapPosition = {x: 0, y : 1 , z : 0};
           } 
 
           // Bottom
-          if (Math.round(intersectionPoint.y * 100) / 100 == currPosition.y - 0.5){
+          if (faceNormal.y  == -1){
             faceMapPosition = {x: 0, y : -1 , z : 0};
           } 
 
           // Front
-          if (Math.round(intersectionPoint.z * 100) / 100 == currPosition.z + 0.5){
+          if (faceNormal.z  == 1){
             faceMapPosition = {x: 0, y : 0 , z : 1};
           } 
 
           // Back
-          if (Math.round(intersectionPoint.z * 100) / 100 == currPosition.z - 0.5){
+          if (faceNormal.z  == -1){
             faceMapPosition = {x: 0, y : 0 , z : -1};
           } 
-         
-
           currPosition.add(faceMapPosition)
         } else {
           currPosition.add({x: 0, y : 1 , z : 0})
+          
         }
-        
-         spawnCube(currPosition)
-
+        spawnCube(currPosition)
       }
 
     //  Draw Helper Grid planes to place blocks on top of  

@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import Grid from './Models/Grid';
 import Lights from './Lights';
+import RaycastWhenCameraMoves from './Utils/RaycasterHelper';
 export default function Experience()
 {
 
@@ -28,8 +29,9 @@ export default function Experience()
             {/* <Debug /> */}
           </Physics>
         </Suspense>
+        <RaycastWhenCameraMoves />
 
-        {/* <RaycastWhenCameraMoves /> */}
+
         <gridHelper position-y={ - 1 } args={[100, 100]} />
         {/* <MapControls  
           enableDamping={true}
