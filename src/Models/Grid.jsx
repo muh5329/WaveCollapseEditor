@@ -16,6 +16,8 @@ export default function Grid(){
     const [hovered, setHovered] = useState(false)
     const [models, setModels] = useState([])
     const selectedModelFile = useModelBrowser((state) => state.selectedModelFile)
+    const [isDragging, setIsDragging] = useState(false);
+
     
     useEffect(() => {
       document.body.style.cursor = hovered ? 'pointer' : 'auto'
@@ -48,8 +50,23 @@ export default function Grid(){
       } 
     }
 
+    const onDragControl = (ctx) => {
+      if (ctx.type === 'mousemove' || ctx.type === 'touchmove') {
+        setIsDragging(true)
+      }
+      if (ctx.type === 'mouseup' || ctx.type === 'touchend') {
+        setTimeout(() => {
+          setIsDragging(false);
+        }, 100);
+      }
+    }
+
+    
     const onGridClick = (ctx) =>{
         ctx.stopPropagation()
+        if (isDragging)
+          return;
+
         const obj = ctx.eventObject;
         const currPosition =  new THREE.Vector3()
         const intersection = ctx.intersections[1] ? ctx.intersections[1] : ctx.intersections[0]
@@ -114,6 +131,7 @@ export default function Grid(){
                   onPointerOver={() => setHovered(true)}
                   onPointerOut={() => setHovered(false)} 
                   onClick={onGridClick}
+                  onDrag={onDragControl}
                   key={""+x +""+z} 
                   rotation={[Math.PI / 2, 0, 0]} 
                 >
