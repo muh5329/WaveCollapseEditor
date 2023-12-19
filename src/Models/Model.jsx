@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 const Model = forwardRef( (props , ref) =>{
     var model = {};
     if (props.modelName != undefined){
-         model = useGLTF(props.modelName);
+          model = useGLTF(props.modelName);
           // Cast model shadow
           model.scene.traverse((child) => {
             child.castShadow = true;
@@ -16,7 +16,7 @@ const Model = forwardRef( (props , ref) =>{
         <group ref={ref}>
             {model.scene != undefined ? 
                  <primitive  
-                 object={ model.scene } 
+                 object={ model.scene.clone() } 
                  position-y={props.position_y}
                  scale={props.scale}
                  >

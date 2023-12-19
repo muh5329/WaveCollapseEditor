@@ -3,6 +3,7 @@ import {  PerspectiveCamera, MapControls } from '@react-three/drei'
 import React, { Suspense, useState, useEffect } from 'react'
 import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import { useControls } from 'leva' 
+import useModelBrowser from '../Store/useModelBrowser';
 import { DoubleSide } from "three";
 import * as THREE from 'three'
 import SelectedModel from './SelectedModel';
@@ -14,6 +15,7 @@ export default function Grid(){
     let cubeSpace = [];
     const [hovered, setHovered] = useState(false)
     const [models, setModels] = useState([])
+    const selectedModelFile = useModelBrowser((state) => state.selectedModelFile)
     
     useEffect(() => {
       document.body.style.cursor = hovered ? 'pointer' : 'auto'
@@ -22,9 +24,7 @@ export default function Grid(){
 
 
     const spawnCube = (position) =>{
-
       // Check to see if there is already a model in place in cube space 
-      
       if (cubeSpace[position.x ]== undefined){
         cubeSpace[position.x ] = [];
       }  
@@ -33,7 +33,6 @@ export default function Grid(){
       }  
       if (cubeSpace[position.x ][position.y][position.z] == undefined){
         let key = position.x + "," + position.y  +","+position.z ;
-       
         let model = <group 
             position={[ position.x, position.y , position.z]}  
             onPointerOver={() => setHovered(true)}
@@ -42,14 +41,11 @@ export default function Grid(){
             onContextMenu={onHandleLeftClick}
             key={key} 
           >
-            <SelectedModel />
+            <SelectedModel selectedModel={selectedModelFile}/>
           </group>
         cubeSpace[position.x][position.y][position.z] = position
         setModels(oldArray => [...oldArray, model]);
-      
-
       } 
-
     }
 
     const onGridClick = (ctx) =>{
@@ -65,7 +61,6 @@ export default function Grid(){
           position = ctx.eventObject.position;
         
         if (position.y >= 0){
-          const intersectionPoint = intersection.point
           var faceNormal = ctx.intersections[0].face.normal ;
           var faceMapPosition = {x: 0, y : 0 , z : 0};
          
@@ -101,7 +96,6 @@ export default function Grid(){
           currPosition.add(faceMapPosition)
         } else {
           currPosition.add({x: 0, y : 1 , z : 0})
-          
         }
         spawnCube(currPosition)
       }
@@ -111,7 +105,6 @@ export default function Grid(){
       let content = [];
       for (let x = 0 ; x < gridDimensions.x ; x++ ) {
         for (let z = 0 ; z < gridDimensions.z ; z++ ) {
-         
               let xPos = x * cubeSize;
               let yPos = 0;
               let zPos = z * cubeSize;
@@ -127,12 +120,9 @@ export default function Grid(){
                   <planeGeometry />
                   <meshBasicMaterial color="green"  wireframe side={DoubleSide} />
                 </mesh>
-              
               );
-        
         }
       }
-    
       return content;
     };
 
