@@ -17,7 +17,7 @@ const Model = forwardRef( (props , ref) =>{
             {model.scene != undefined ? 
                  <primitive  
                  object={ model.scene.clone() } 
-                 position-y={props.position_y}
+                 position={props.position}
                  scale={props.scale}
                  >
                 </primitive>

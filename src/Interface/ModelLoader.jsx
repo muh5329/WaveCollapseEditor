@@ -17,8 +17,8 @@ export default function ModelLoader(){
     const selectedModel = useModelBrowser((state) => state.selectedModel)
     const setSelectedModel = useModelBrowser((state) => state.setSelectedIndex)
     const setSelectedFile = useModelBrowser((state) => state.setSelectedFile)
-    const pageSize = 12
-  
+    const pageSize = 12;
+    
  
     /**
      *  setCurrentPage
@@ -27,30 +27,39 @@ export default function ModelLoader(){
      * 
      */
     const setCurrentPage = (data, currentPage)=>{
-        let icons = []
-        let iconIndex = 0
-        const startingIndex = currentPage * pageSize
-        for (let i = startingIndex; i < pageSize + startingIndex ; i++){
-            let icon = data[i].icon
-            icons[iconIndex] = window.location.origin + icon
-            iconIndex++ 
-            
+        try {
+            let icons = []
+            let iconIndex = 0
+            const startingIndex = currentPage * pageSize
+            for (let i = startingIndex; i < pageSize + startingIndex ; i++){
+                let icon = data[i].icon
+                icons[iconIndex] = window.location.origin + icon
+                iconIndex++; 
+            }
+            setCurrentIcons(icons)
+            setSelectedModel(-1) // Reset selected
+        } catch (e){
+            console.log(e);
         }
-        setCurrentIcons(icons)
-        setSelectedModel(-1) // Reset selected
+ 
     }
 
     const getNextPage = () => {
+        var page = 0;
         if (currentPage < data.length / pageSize){
+             page = currentPage + 1;
              setPage(currentPage + 1 )
         }
-        setCurrentPage(data, currentPage)
+        setCurrentPage(data, page)
     }
 
     const getPreviousPage = () => {
-        if (currentPage >= 1)
-            setPage(currentPage - 1 )
-        setCurrentPage(data, currentPage)
+        var page = 0;
+        if (currentPage >= 1){
+            page =  currentPage - 1 ;
+            setPage(page )
+        }    
+        setCurrentPage(data, page)
     }
     
     const fetchJson = () => {

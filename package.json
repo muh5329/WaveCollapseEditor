@@ -16,6 +16,7 @@
     "@react-three/drei": "^9.50.3",
     "@react-three/fiber": "^8.9.2",
     "@react-three/rapier": "^0.9.0",
+    "devtools": "^8.26.3",
     "leva": "^0.9.34",
     "r3f-perf": "^6.6.3",
     "react": "18.2",

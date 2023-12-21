@@ -3,7 +3,7 @@ import React, { Suspense } from 'react'
 import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import Grid from './Models/Grid';
 import Lights from './Lights';
-import RaycastWhenCameraMoves from './Utils/RaycasterHelper';
+import RaycastWhenCameraMoves from './Utils/RaycasterHelper'
 export default function Experience()
 {
 
@@ -26,7 +26,7 @@ export default function Experience()
           <Physics >
             <Lights />
             <Grid />
-            {/* <Debug /> */}
+            {/* <Debug />  */}
           </Physics>
         </Suspense>
         <RaycastWhenCameraMoves />

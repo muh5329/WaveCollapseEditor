@@ -14,7 +14,16 @@ export default function SelectedModel(props){
     // Load the selected model into the Model Class object , the model class object uses GLTF loader to load the .glb model in 
     // place. 
 
-    const selectedMesh = <Model ref={modelRef} modelName={selectedModelFile} scale="0.09" position_y={-1.0} />
+    const selectedMesh =  <mesh>
+                            <boxGeometry />
+                            <meshStandardMaterial color="purple" wireframe={true} />
+                            <Model 
+                                ref={modelRef} 
+                                modelName={selectedModelFile} 
+                                scale="0.09" 
+                                position={[0.5, -0.5, -0.5]}
+                                  />
+                        </mesh>      
     const model = selectedModelFile != "" ? selectedMesh : genericMesh
 
 
