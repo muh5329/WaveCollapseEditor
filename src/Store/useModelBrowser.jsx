@@ -5,6 +5,7 @@ export default create(devtools(subscribeWithSelector( (set)=>{
     return {
         selectedModel: -1,
         selectedModelFile:"",
+        selectedRotation: 0,
         cubeSpace:[],
         setSelectedIndex: (index)=>
         {
@@ -20,6 +21,13 @@ export default create(devtools(subscribeWithSelector( (set)=>{
                 return { selectedModelFile: file}
             })
         },
+        setSelectedRotation: (selectedRotation)=>
+        {
+            set((state)=>{
+                useModelStore.setState({selectedRotation: selectedRotation})
+                return { selectedRotation: selectedRotation}
+            })
+        },
         setCubeSpace: (cubeSpace)=>
         {
             set((state)=>{
@@ -30,7 +38,7 @@ export default create(devtools(subscribeWithSelector( (set)=>{
     }
 })))
 //useModelBrowser((state) => state.selectedModelFile)
-
+// Non Reactive Store
 export  const useModelStore = create(() => ({  selectedModel: -1,selectedModelFile:"", cubeSpace:[]}));
 
 

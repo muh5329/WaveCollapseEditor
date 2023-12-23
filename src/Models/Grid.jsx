@@ -14,9 +14,9 @@ export default function Grid(){
     const cubeSize = 1;
     let cubeSpace = useModelBrowser((state) => state.cubeSpace) 
     const setCubeSpace = useModelBrowser((state) => state.setCubeSpace)
+    const selectedRotation = useModelBrowser((state) => state.selectedRotation)
     const [hovered, setHovered] = useState(false)
     const [models, setModels] = useState([])
-  
     const [isDragging, setIsDragging] = useState(false);
     
     useEffect(() => {
@@ -45,7 +45,7 @@ export default function Grid(){
             onContextMenu={onHandleLeftClick}
             key={key} 
           >
-            <SelectedModel selectedModel={selectedModelFile}/>
+            <SelectedModel selectedModel={selectedModelFile} selectedRotation={selectedRotation}/>
           </group>
         cubeSpace[position.x][position.y][position.z] = position
         setModels(oldArray => [...oldArray, model]);

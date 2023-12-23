@@ -15,8 +15,10 @@ export default function ModelLoader(){
     const [currentIcons, setCurrentIcons] = useState([])
     const [currentPage, setPage] = useState(0)
     const selectedModel = useModelBrowser((state) => state.selectedModel)
+    let selectedRotation = useModelBrowser((state) => state.selectedRotation)
     const setSelectedModel = useModelBrowser((state) => state.setSelectedIndex)
     const setSelectedFile = useModelBrowser((state) => state.setSelectedFile)
+    const setSelectedRotation = useModelBrowser((state) => state.setSelectedRotation)
     const pageSize = 12;
     
  
@@ -62,6 +64,13 @@ export default function ModelLoader(){
         setCurrentPage(data, page)
     }
     
+    const getCurrentRotation = () => {
+        if (selectedRotation < 360 )
+            selectedRotation+=90;
+        else selectedRotation =0;
+        setSelectedRotation(selectedRotation);
+    }
+
     const fetchJson = () => {
         fetch('./models.json')
         .then(response => {
@@ -145,7 +154,8 @@ export default function ModelLoader(){
 
             {/** Nav */} 
             <div className="content ">
-                <div className="left-nav " onClick={getPreviousPage}>  <img  className="icon" src="./icons/arrow_left.png"/>  </div> 
+                <div className="right-nav " onClick={getPreviousPage}>  <img  className="icon" src="./icons/arrow_left.png"/>  </div> 
+                <div className="right-nav" onClick={getCurrentRotation}> <img  className={`icon rotate${selectedRotation}` } src="./icons/right-angle.png"/>  </div>
                 <div className="right-nav " onClick={getNextPage}>  <img  className="icon" src="./icons/arrow_right.png"/>  </div>
             </div>
             

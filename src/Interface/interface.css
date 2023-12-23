@@ -77,4 +77,32 @@ canvas
 
 }
 
-  
+.browser .icon.rotate0
+{
+    transform: rotate(0);
+
+}
+
+.browser .icon.rotate90
+{
+    transform: rotate(90deg);
+
+}
+
+.browser .icon.rotate180
+{
+    transform: rotate(180deg);
+
+}
+
+.browser .icon.rotate270
+{
+    transform: rotate(270deg);
+
+}
+
+.browser .icon.rotate2360
+{
+    transform: rotate(360deg);
+
+}

@@ -3,7 +3,7 @@ import './interface.css'
 export default function Interface(){
     
     return <>
-        < div >
+        <div >
             <ModelLoader/>
         </div>
 

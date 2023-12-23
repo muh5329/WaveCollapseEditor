@@ -19,6 +19,7 @@ const Model = forwardRef( (props , ref) =>{
                  object={ model.scene.clone() } 
                  position={props.position}
                  scale={props.scale}
+                 rotation={props.rotation}
                  >
                 </primitive>
             : <></>}            
