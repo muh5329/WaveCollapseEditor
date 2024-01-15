@@ -8,7 +8,6 @@ export default create(devtools(subscribeWithSelector( (set)=>{
         selectedRotation: 0,
         cubeSpace:[],
         connections: null,
-        propagationStack : [],
         setSelectedIndex: (index)=>
         {
             set((state)=>{
@@ -44,14 +43,7 @@ export default create(devtools(subscribeWithSelector( (set)=>{
                 return { connections: connections}
             })
         }
-        ,
-        setPropagationStack: (propagationStack)=>
-        {
-            set((state)=>{
-                useModelStore.setState({propagationStack: propagationStack})
-                return { propagationStack: propagationStack}
-            })
-        }
+        
     }
 })))
 //useModelBrowser((state) => state.selectedModelFile)
@@ -60,8 +52,7 @@ export  const useModelStore = create(() => ({  selectedModel: -1,
         selectedModelFile:"", 
         cubeSpace:[], 
         selectedRotation:0,
-        connections:null,
-        propagationStack:  []
+        connections:null
         }));
 
 

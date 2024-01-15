@@ -16,8 +16,6 @@ export default function WaveFunction(){
     var floorPossibleConnections = []; 
     var possibilitySpace = [];
     var finalModelList = [];
-    //var propagationStack =  useModelBrowser((state) => state.propagationStack) 
-    //const setPropagationStack= useModelBrowser((state) => state.setPropagationStack) 
 
     useEffect(() => {
         populatePossibilitySpace();
@@ -128,9 +126,9 @@ export default function WaveFunction(){
         var modelList = possibilitySpace[node.x][node.y][node.z]
         if (modelList == ""){
             if (node.y == 0){
-                //possibilities = floorPossibleConnections;
+                possibilities = floorPossibleConnections;
             } else {
-                //possibilities = nonFloorPossibleConnections;
+                possibilities = nonFloorPossibleConnections;
             }
         } else {
             for (var model of modelList){
