@@ -1,51 +1,6 @@
 [
     {
         "id": 0,
-        "name": "flagWhiteWide",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/flagWhiteWide_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/flagWhiteWide.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 1,
-        "name": "siegeTower",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/siegeTower_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/siegeTower.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 2,
-        "name": "flagBannerShort",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/flagBannerShort_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/flagBannerShort.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 3,
         "name": "towerSquareMidColor",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareMidColor_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareMidColor.glb",
@@ -60,22 +15,7 @@
         "rotation": 1
     },
     {
-        "id": 4,
-        "name": "knightBlue",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/knightBlue_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/knightBlue.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 5,
+        "id": 1,
         "name": "towerSquareMidOpen",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareMidOpen_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareMidOpen.glb",
@@ -90,22 +30,7 @@
         "rotation": 1
     },
     {
-        "id": 6,
-        "name": "flagBannerLong",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/flagBannerLong_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/flagBannerLong.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 7,
+        "id": 2,
         "name": "towerTopCorner",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerTopCorner_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerTopCorner.glb",
@@ -120,7 +45,7 @@
         "rotation": 1
     },
     {
-        "id": 8,
+        "id": 3,
         "name": "towerSquareBase",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareBase_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareBase.glb",
@@ -135,22 +60,7 @@
         "rotation": 1
     },
     {
-        "id": 9,
-        "name": "shieldRed",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/shieldRed_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/shieldRed.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 10,
+        "id": 4,
         "name": "wallNarrowStairsFence",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrowStairsFence_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrowStairsFence.glb",
@@ -165,22 +75,7 @@
         "rotation": 1
     },
     {
-        "id": 11,
-        "name": "siegeCatapult",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/siegeCatapult_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/siegeCatapult.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 12,
+        "id": 5,
         "name": "towerSquareTopRoofHigh",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareTopRoofHigh_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareTopRoofHigh.glb",
@@ -195,37 +90,7 @@
         "rotation": 1
     },
     {
-        "id": 13,
-        "name": "wallStud",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallStud_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallStud.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 14,
-        "name": "sword",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/sword_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/sword.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 15,
+        "id": 6,
         "name": "towerSquareArch",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareArch_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareArch.glb",
@@ -240,37 +105,7 @@
         "rotation": 1
     },
     {
-        "id": 16,
-        "name": "knightRed",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/knightRed_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/knightRed.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 17,
-        "name": "door",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/door_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/door.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 18,
+        "id": 7,
         "name": "",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/.DS_Store",
@@ -285,7 +120,7 @@
         "rotation": 1
     },
     {
-        "id": 19,
+        "id": 8,
         "name": "wallNarrow",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrow_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrow.glb",
@@ -300,7 +135,7 @@
         "rotation": 1
     },
     {
-        "id": 20,
+        "id": 9,
         "name": "towerSquare",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquare_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquare.glb",
@@ -315,7 +150,7 @@
         "rotation": 1
     },
     {
-        "id": 21,
+        "id": 10,
         "name": "towerSquareRoof",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareRoof_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareRoof.glb",
@@ -330,7 +165,7 @@
         "rotation": 1
     },
     {
-        "id": 22,
+        "id": 11,
         "name": "towerSquareTop",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareTop_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareTop.glb",
@@ -345,7 +180,7 @@
         "rotation": 1
     },
     {
-        "id": 23,
+        "id": 12,
         "name": "wall",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wall_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wall.glb",
@@ -360,22 +195,7 @@
         "rotation": 1
     },
     {
-        "id": 24,
-        "name": "siegeRam",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/siegeRam_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/siegeRam.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 25,
+        "id": 13,
         "name": "towerSquareMidWindows",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareMidWindows_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareMidWindows.glb",
@@ -390,7 +210,7 @@
         "rotation": 1
     },
     {
-        "id": 26,
+        "id": 14,
         "name": "towerSquareTopRoof",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareTopRoof_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareTopRoof.glb",
@@ -405,7 +225,7 @@
         "rotation": 1
     },
     {
-        "id": 27,
+        "id": 15,
         "name": "towerSquarePoles",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquarePoles_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquarePoles.glb",
@@ -420,7 +240,7 @@
         "rotation": 1
     },
     {
-        "id": 28,
+        "id": 16,
         "name": "wallDoor",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallDoor_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallDoor.glb",
@@ -435,7 +255,7 @@
         "rotation": 1
     },
     {
-        "id": 29,
+        "id": 17,
         "name": "wallCornerHalfTower",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallCornerHalfTower_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallCornerHalfTower.glb",
@@ -450,7 +270,7 @@
         "rotation": 1
     },
     {
-        "id": 30,
+        "id": 18,
         "name": "wallHalf",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallHalf_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallHalf.glb",
@@ -465,22 +285,7 @@
         "rotation": 1
     },
     {
-        "id": 31,
-        "name": "metalGate",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/metalGate_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/metalGate.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 32,
+        "id": 19,
         "name": "towerSquareMid",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareMid_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareMid.glb",
@@ -495,7 +300,7 @@
         "rotation": 1
     },
     {
-        "id": 33,
+        "id": 20,
         "name": "towerSquareTopColor",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareTopColor_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareTopColor.glb",
@@ -510,7 +315,7 @@
         "rotation": 1
     },
     {
-        "id": 34,
+        "id": 21,
         "name": "towerSquareBaseBorder",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareBaseBorder_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareBaseBorder.glb",
@@ -525,7 +330,7 @@
         "rotation": 1
     },
     {
-        "id": 35,
+        "id": 22,
         "name": "wallNarrowWood",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrowWood_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrowWood.glb",
@@ -540,22 +345,7 @@
         "rotation": 1
     },
     {
-        "id": 36,
-        "name": "king",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/king_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/king.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 37,
+        "id": 23,
         "name": "wallCornerHalf",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallCornerHalf_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallCornerHalf.glb",
@@ -570,22 +360,7 @@
         "rotation": 1
     },
     {
-        "id": 38,
-        "name": "siegeTrebuchet",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/siegeTrebuchet_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/siegeTrebuchet.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 39,
+        "id": 24,
         "name": "wallNarrowCorner",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrowCorner_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrowCorner.glb",
@@ -600,7 +375,7 @@
         "rotation": 1
     },
     {
-        "id": 40,
+        "id": 25,
         "name": "wallNarrowStairs",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrowStairs_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrowStairs.glb",
@@ -615,7 +390,7 @@
         "rotation": 1
     },
     {
-        "id": 41,
+        "id": 26,
         "name": "towerSquareBaseColor",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareBaseColor_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareBaseColor.glb",
@@ -630,7 +405,7 @@
         "rotation": 1
     },
     {
-        "id": 42,
+        "id": 27,
         "name": "wallNarrowWoodFence",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrowWoodFence_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrowWoodFence.glb",
@@ -645,7 +420,7 @@
         "rotation": 1
     },
     {
-        "id": 43,
+        "id": 28,
         "name": "towerSquareMidOpenHalf",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerSquareMidOpenHalf_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerSquareMidOpenHalf.glb",
@@ -660,22 +435,7 @@
         "rotation": 1
     },
     {
-        "id": 44,
-        "name": "siegeBallista",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/siegeBallista_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/siegeBallista.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 45,
+        "id": 29,
         "name": "towerTop",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerTop_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerTop.glb",
@@ -690,7 +450,7 @@
         "rotation": 1
     },
     {
-        "id": 46,
+        "id": 30,
         "name": "towerBase",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerBase_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerBase.glb",
@@ -705,37 +465,7 @@
         "rotation": 1
     },
     {
-        "id": 47,
-        "name": "flagWhite",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/flagWhite_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/flagWhite.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 48,
-        "name": "gate",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/gate_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/gate.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 49,
+        "id": 31,
         "name": "towerTopRoof",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerTopRoof_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerTopRoof.glb",
@@ -750,22 +480,7 @@
         "rotation": 1
     },
     {
-        "id": 50,
-        "name": "stairsStone",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/stairsStone_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/stairsStone.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 51,
+        "id": 32,
         "name": "bridge",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/bridge_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/bridge.glb",
@@ -780,7 +495,7 @@
         "rotation": 1
     },
     {
-        "id": 52,
+        "id": 33,
         "name": "wallCorner",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallCorner_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallCorner.glb",
@@ -795,22 +510,7 @@
         "rotation": 1
     },
     {
-        "id": 53,
-        "name": "towerBalcony",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/towerBalcony_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/towerBalcony.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 54,
+        "id": 34,
         "name": "wallNarrowGate",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallNarrowGate_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallNarrowGate.glb",
@@ -825,22 +525,7 @@
         "rotation": 1
     },
     {
-        "id": 55,
-        "name": "flagBlue",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/flagBlue_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/flagBlue.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 56,
+        "id": 35,
         "name": "wallPillar",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallPillar_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallPillar.glb",
@@ -855,55 +540,10 @@
         "rotation": 1
     },
     {
-        "id": 57,
-        "name": "stairsStoneSlant",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/stairsStoneSlant_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/stairsStoneSlant.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 58,
-        "name": "shieldBlue",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/shieldBlue_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/shieldBlue.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 59,
+        "id": 36,
         "name": "wallToNarrow",
         "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/wallToNarrow_NE.png",
         "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/wallToNarrow.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 60,
-        "name": "flagBlueWide",
-        "icon": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/isometric/flagBlueWide_NE.png",
-        "file": "/Users/muneebhaq/Documents/projects/WaveCollapseEditor/public/castle/flagBlueWide.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],

@@ -1,0 +1,32 @@
+
+
+canvas
+{
+    touch-action:none
+}
+
+/**
+* model browser
+*/
+.browser
+{
+    position: absolute;
+    top: 2%;
+    left: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.browser .generateBtn
+{
+    margin-top: 4px;
+    margin-left: 200px;
+
+}
+
+.browser .content
+{
+    display: flex;
+    justify-content: left;
+}

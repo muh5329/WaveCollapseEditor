@@ -18,6 +18,12 @@ canvas
     user-select: none; /* Standard syntax */
 }
 
+.browser .generateBtn
+{
+    margin-top: 4px;
+    margin-left: 200px;
+
+}
 
 .browser .content
 {

@@ -14,7 +14,6 @@ export default function Grid(){
     const cubeSize = 1;
     let cubeSpace = useModelBrowser((state) => state.cubeSpace) 
     const setCubeSpace = useModelBrowser((state) => state.setCubeSpace)
-    const selectedRotation = useModelBrowser((state) => state.selectedRotation)
     const [hovered, setHovered] = useState(false)
     const [models, setModels] = useState([])
     const [isDragging, setIsDragging] = useState(false);
@@ -22,11 +21,14 @@ export default function Grid(){
     useEffect(() => {
       document.body.style.cursor = hovered ? 'pointer' : 'auto'
       return () => document.body.style.cursor = 'auto'
-    }, [hovered])
+    }, [hovered]);
+
+    
 
 
     const spawnCube = (position) =>{
       const selectedModelFile = useModelStore.getState().selectedModelFile;
+      const selectedRotation = useModelStore.getState().selectedRotation;
       cubeSpace = useModelStore.getState().cubeSpace;
       // Check to see if there is already a model in place in cube space 
       if (cubeSpace[position.x ]== undefined){
@@ -47,6 +49,8 @@ export default function Grid(){
           >
             <SelectedModel selectedModel={selectedModelFile} selectedRotation={selectedRotation}/>
           </group>
+        position.modelFile = selectedModelFile;
+        position.rotation = selectedRotation;
         cubeSpace[position.x][position.y][position.z] = position
         setModels(oldArray => [...oldArray, model]);
         setCubeSpace(cubeSpace);

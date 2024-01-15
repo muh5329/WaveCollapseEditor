@@ -17,9 +17,10 @@ const Model = forwardRef( (props , ref) =>{
             {model.scene != undefined ? 
                  <primitive  
                  object={ model.scene.clone() } 
+                 rotation={props.rotation}
                  position={props.position}
                  scale={props.scale}
-                 rotation={props.rotation}
+                 
                  >
                 </primitive>
             : <></>}            

@@ -4,6 +4,7 @@ import { Physics, RigidBody, CuboidCollider, Debug} from "@react-three/rapier";
 import Grid from './Models/Grid';
 import Lights from './Lights';
 import RaycastWhenCameraMoves from './Utils/RaycasterHelper'
+import WaveFunction from './Generator/WaveFunctionGenerator';
 export default function Experience()
 {
 
@@ -27,12 +28,17 @@ export default function Experience()
             <Lights />
             <Grid />
             {/* <Debug />  */}
+            <WaveFunction />
+            <axesHelper args={[5]} />
+            
           </Physics>
         </Suspense>
         <RaycastWhenCameraMoves />
 
 
         <gridHelper position-y={ - 1 } args={[100, 100]} />
+
+        
         {/* <MapControls  
           enableDamping={true}
           dampingFactor={0.05}

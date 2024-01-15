@@ -2,7 +2,6 @@ import './interface.css'
 import React, { useState, useEffect } from 'react'
 import useModelBrowser from '../Store/useModelBrowser';
 
-
 /**
  * 
  * @returns  UI that controlls the modelview browser

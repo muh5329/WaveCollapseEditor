@@ -1,9 +1,9 @@
 [
     {
         "id": 0,
-        "name": "flagWhiteWide",
-        "icon": "/castle/isometric/flagWhiteWide_NE.png",
-        "file": "./castle/flagWhiteWide.glb",
+        "name": "towerSquareMidColor",
+        "icon": "/castle/isometric/towerSquareMidColor_NE.png",
+        "file": "/castle/towerSquareMidColor.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -16,9 +16,9 @@
     },
     {
         "id": 1,
-        "name": "siegeTower",
-        "icon": "/castle/isometric/siegeTower_NE.png",
-        "file": "./castle/siegeTower.glb",
+        "name": "towerSquareMidOpen",
+        "icon": "/castle/isometric/towerSquareMidOpen_NE.png",
+        "file": "/castle/towerSquareMidOpen.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -31,9 +31,9 @@
     },
     {
         "id": 2,
-        "name": "flagBannerShort",
-        "icon": "/castle/isometric/flagBannerShort_NE.png",
-        "file": "./castle/flagBannerShort.glb",
+        "name": "towerTopCorner",
+        "icon": "/castle/isometric/towerTopCorner_NE.png",
+        "file": "/castle/towerTopCorner.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -46,9 +46,9 @@
     },
     {
         "id": 3,
-        "name": "towerSquareMidColor",
-        "icon": "/castle/isometric/towerSquareMidColor_NE.png",
-        "file": "./castle/towerSquareMidColor.glb",
+        "name": "towerSquareBase",
+        "icon": "/castle/isometric/towerSquareBase_NE.png",
+        "file": "/castle/towerSquareBase.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -61,9 +61,9 @@
     },
     {
         "id": 4,
-        "name": "knightBlue",
-        "icon": "/castle/isometric/knightBlue_NE.png",
-        "file": "./castle/knightBlue.glb",
+        "name": "wallNarrowStairsFence",
+        "icon": "/castle/isometric/wallNarrowStairsFence_NE.png",
+        "file": "/castle/wallNarrowStairsFence.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -76,9 +76,9 @@
     },
     {
         "id": 5,
-        "name": "towerSquareMidOpen",
-        "icon": "/castle/isometric/towerSquareMidOpen_NE.png",
-        "file": "./castle/towerSquareMidOpen.glb",
+        "name": "towerSquareTopRoofHigh",
+        "icon": "/castle/isometric/towerSquareTopRoofHigh_NE.png",
+        "file": "/castle/towerSquareTopRoofHigh.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -91,24 +91,9 @@
     },
     {
         "id": 6,
-        "name": "flagBannerLong",
-        "icon": "/castle/isometric/flagBannerLong_NE.png",
-        "file": "./castle/flagBannerLong.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 7,
-        "name": "towerTopCorner",
-        "icon": "/castle/isometric/towerTopCorner_NE.png",
-        "file": "./castle/towerTopCorner.glb",
+        "name": "towerSquareArch",
+        "icon": "/castle/isometric/towerSquareArch_NE.png",
+        "file": "/castle/towerSquareArch.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -121,9 +106,9 @@
     },
     {
         "id": 8,
-        "name": "towerSquareBase",
-        "icon": "/castle/isometric/towerSquareBase_NE.png",
-        "file": "./castle/towerSquareBase.glb",
+        "name": "wallNarrow",
+        "icon": "/castle/isometric/wallNarrow_NE.png",
+        "file": "/castle/wallNarrow.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -136,9 +121,9 @@
     },
     {
         "id": 9,
-        "name": "shieldRed",
-        "icon": "/castle/isometric/shieldRed_NE.png",
-        "file": "./castle/shieldRed.glb",
+        "name": "towerSquare",
+        "icon": "/castle/isometric/towerSquare_NE.png",
+        "file": "/castle/towerSquare.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -151,9 +136,9 @@
     },
     {
         "id": 10,
-        "name": "wallNarrowStairsFence",
-        "icon": "/castle/isometric/wallNarrowStairsFence_NE.png",
-        "file": "./castle/wallNarrowStairsFence.glb",
+        "name": "towerSquareRoof",
+        "icon": "/castle/isometric/towerSquareRoof_NE.png",
+        "file": "/castle/towerSquareRoof.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -166,9 +151,9 @@
     },
     {
         "id": 11,
-        "name": "siegeCatapult",
-        "icon": "/castle/isometric/siegeCatapult_NE.png",
-        "file": "./castle/siegeCatapult.glb",
+        "name": "towerSquareTop",
+        "icon": "/castle/isometric/towerSquareTop_NE.png",
+        "file": "/castle/towerSquareTop.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -181,9 +166,9 @@
     },
     {
         "id": 12,
-        "name": "towerSquareTopRoofHigh",
-        "icon": "/castle/isometric/towerSquareTopRoofHigh_NE.png",
-        "file": "./castle/towerSquareTopRoofHigh.glb",
+        "name": "wall",
+        "icon": "/castle/isometric/wall_NE.png",
+        "file": "/castle/wall.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -196,9 +181,9 @@
     },
     {
         "id": 13,
-        "name": "wallStud",
-        "icon": "/castle/isometric/wallStud_NE.png",
-        "file": "./castle/wallStud.glb",
+        "name": "towerSquareMidWindows",
+        "icon": "/castle/isometric/towerSquareMidWindows_NE.png",
+        "file": "/castle/towerSquareMidWindows.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -211,9 +196,9 @@
     },
     {
         "id": 14,
-        "name": "sword",
-        "icon": "/castle/isometric/sword_NE.png",
-        "file": "./castle/sword.glb",
+        "name": "towerSquareTopRoof",
+        "icon": "/castle/isometric/towerSquareTopRoof_NE.png",
+        "file": "/castle/towerSquareTopRoof.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -226,9 +211,9 @@
     },
     {
         "id": 15,
-        "name": "towerSquareArch",
-        "icon": "/castle/isometric/towerSquareArch_NE.png",
-        "file": "./castle/towerSquareArch.glb",
+        "name": "towerSquarePoles",
+        "icon": "/castle/isometric/towerSquarePoles_NE.png",
+        "file": "/castle/towerSquarePoles.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -241,9 +226,9 @@
     },
     {
         "id": 16,
-        "name": "knightRed",
-        "icon": "/castle/isometric/knightRed_NE.png",
-        "file": "./castle/knightRed.glb",
+        "name": "wallDoor",
+        "icon": "/castle/isometric/wallDoor_NE.png",
+        "file": "/castle/wallDoor.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -256,9 +241,24 @@
     },
     {
         "id": 17,
-        "name": "door",
-        "icon": "/castle/isometric/door_NE.png",
-        "file": "./castle/door.glb",
+        "name": "wallCornerHalfTower",
+        "icon": "/castle/isometric/wallCornerHalfTower_NE.png",
+        "file": "/castle/wallCornerHalfTower.glb",
+        "connections": {
+            "xPos": [],
+            "xNeg": [],
+            "yPos": [],
+            "yNeg": [],
+            "zPos": [],
+            "zNeg": []
+        },
+        "rotation": 1
+    },
+    {
+        "id": 18,
+        "name": "wallHalf",
+        "icon": "/castle/isometric/wallHalf_NE.png",
+        "file": "/castle/wallHalf.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -271,9 +271,9 @@
     },
     {
         "id": 19,
-        "name": "wallNarrow",
-        "icon": "/castle/isometric/wallNarrow_NE.png",
-        "file": "./castle/wallNarrow.glb",
+        "name": "towerSquareMid",
+        "icon": "/castle/isometric/towerSquareMid_NE.png",
+        "file": "/castle/towerSquareMid.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -286,9 +286,9 @@
     },
     {
         "id": 20,
-        "name": "towerSquare",
-        "icon": "/castle/isometric/towerSquare_NE.png",
-        "file": "./castle/towerSquare.glb",
+        "name": "towerSquareTopColor",
+        "icon": "/castle/isometric/towerSquareTopColor_NE.png",
+        "file": "/castle/towerSquareTopColor.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -301,9 +301,9 @@
     },
     {
         "id": 21,
-        "name": "towerSquareRoof",
-        "icon": "/castle/isometric/towerSquareRoof_NE.png",
-        "file": "./castle/towerSquareRoof.glb",
+        "name": "towerSquareBaseBorder",
+        "icon": "/castle/isometric/towerSquareBaseBorder_NE.png",
+        "file": "/castle/towerSquareBaseBorder.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -316,9 +316,9 @@
     },
     {
         "id": 22,
-        "name": "towerSquareTop",
-        "icon": "/castle/isometric/towerSquareTop_NE.png",
-        "file": "./castle/towerSquareTop.glb",
+        "name": "wallNarrowWood",
+        "icon": "/castle/isometric/wallNarrowWood_NE.png",
+        "file": "/castle/wallNarrowWood.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -331,9 +331,9 @@
     },
     {
         "id": 23,
-        "name": "wall",
-        "icon": "/castle/isometric/wall_NE.png",
-        "file": "./castle/wall.glb",
+        "name": "wallCornerHalf",
+        "icon": "/castle/isometric/wallCornerHalf_NE.png",
+        "file": "/castle/wallCornerHalf.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -346,9 +346,9 @@
     },
     {
         "id": 24,
-        "name": "siegeRam",
-        "icon": "/castle/isometric/siegeRam_NE.png",
-        "file": "./castle/siegeRam.glb",
+        "name": "wallNarrowCorner",
+        "icon": "/castle/isometric/wallNarrowCorner_NE.png",
+        "file": "/castle/wallNarrowCorner.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -361,9 +361,9 @@
     },
     {
         "id": 25,
-        "name": "towerSquareMidWindows",
-        "icon": "/castle/isometric/towerSquareMidWindows_NE.png",
-        "file": "./castle/towerSquareMidWindows.glb",
+        "name": "wallNarrowStairs",
+        "icon": "/castle/isometric/wallNarrowStairs_NE.png",
+        "file": "/castle/wallNarrowStairs.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -376,9 +376,9 @@
     },
     {
         "id": 26,
-        "name": "towerSquareTopRoof",
-        "icon": "/castle/isometric/towerSquareTopRoof_NE.png",
-        "file": "./castle/towerSquareTopRoof.glb",
+        "name": "towerSquareBaseColor",
+        "icon": "/castle/isometric/towerSquareBaseColor_NE.png",
+        "file": "/castle/towerSquareBaseColor.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -391,9 +391,9 @@
     },
     {
         "id": 27,
-        "name": "towerSquarePoles",
-        "icon": "/castle/isometric/towerSquarePoles_NE.png",
-        "file": "./castle/towerSquarePoles.glb",
+        "name": "wallNarrowWoodFence",
+        "icon": "/castle/isometric/wallNarrowWoodFence_NE.png",
+        "file": "/castle/wallNarrowWoodFence.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -406,9 +406,9 @@
     },
     {
         "id": 28,
-        "name": "wallDoor",
-        "icon": "/castle/isometric/wallDoor_NE.png",
-        "file": "./castle/wallDoor.glb",
+        "name": "towerSquareMidOpenHalf",
+        "icon": "/castle/isometric/towerSquareMidOpenHalf_NE.png",
+        "file": "/castle/towerSquareMidOpenHalf.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -421,9 +421,9 @@
     },
     {
         "id": 29,
-        "name": "wallCornerHalfTower",
-        "icon": "/castle/isometric/wallCornerHalfTower_NE.png",
-        "file": "./castle/wallCornerHalfTower.glb",
+        "name": "towerTop",
+        "icon": "/castle/isometric/towerTop_NE.png",
+        "file": "/castle/towerTop.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -436,9 +436,9 @@
     },
     {
         "id": 30,
-        "name": "wallHalf",
-        "icon": "/castle/isometric/wallHalf_NE.png",
-        "file": "./castle/wallHalf.glb",
+        "name": "towerBase",
+        "icon": "/castle/isometric/towerBase_NE.png",
+        "file": "/castle/towerBase.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -451,9 +451,9 @@
     },
     {
         "id": 31,
-        "name": "metalGate",
-        "icon": "/castle/isometric/metalGate_NE.png",
-        "file": "./castle/metalGate.glb",
+        "name": "towerTopRoof",
+        "icon": "/castle/isometric/towerTopRoof_NE.png",
+        "file": "/castle/towerTopRoof.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -466,9 +466,9 @@
     },
     {
         "id": 32,
-        "name": "towerSquareMid",
-        "icon": "/castle/isometric/towerSquareMid_NE.png",
-        "file": "./castle/towerSquareMid.glb",
+        "name": "bridge",
+        "icon": "/castle/isometric/bridge_NE.png",
+        "file": "/castle/bridge.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -481,9 +481,9 @@
     },
     {
         "id": 33,
-        "name": "towerSquareTopColor",
-        "icon": "/castle/isometric/towerSquareTopColor_NE.png",
-        "file": "./castle/towerSquareTopColor.glb",
+        "name": "wallCorner",
+        "icon": "/castle/isometric/wallCorner_NE.png",
+        "file": "/castle/wallCorner.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -496,9 +496,9 @@
     },
     {
         "id": 34,
-        "name": "towerSquareBaseBorder",
-        "icon": "/castle/isometric/towerSquareBaseBorder_NE.png",
-        "file": "./castle/towerSquareBaseBorder.glb",
+        "name": "wallNarrowGate",
+        "icon": "/castle/isometric/wallNarrowGate_NE.png",
+        "file": "/castle/wallNarrowGate.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -511,9 +511,9 @@
     },
     {
         "id": 35,
-        "name": "wallNarrowWood",
-        "icon": "/castle/isometric/wallNarrowWood_NE.png",
-        "file": "./castle/wallNarrowWood.glb",
+        "name": "wallPillar",
+        "icon": "/castle/isometric/wallPillar_NE.png",
+        "file": "/castle/wallPillar.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],
@@ -526,369 +526,9 @@
     },
     {
         "id": 36,
-        "name": "king",
-        "icon": "/castle/isometric/king_NE.png",
-        "file": "./castle/king.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 37,
-        "name": "wallCornerHalf",
-        "icon": "/castle/isometric/wallCornerHalf_NE.png",
-        "file": "./castle/wallCornerHalf.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 38,
-        "name": "siegeTrebuchet",
-        "icon": "/castle/isometric/siegeTrebuchet_NE.png",
-        "file": "./castle/siegeTrebuchet.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 39,
-        "name": "wallNarrowCorner",
-        "icon": "/castle/isometric/wallNarrowCorner_NE.png",
-        "file": "./castle/wallNarrowCorner.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 40,
-        "name": "wallNarrowStairs",
-        "icon": "/castle/isometric/wallNarrowStairs_NE.png",
-        "file": "./castle/wallNarrowStairs.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 41,
-        "name": "towerSquareBaseColor",
-        "icon": "/castle/isometric/towerSquareBaseColor_NE.png",
-        "file": "./castle/towerSquareBaseColor.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 42,
-        "name": "wallNarrowWoodFence",
-        "icon": "/castle/isometric/wallNarrowWoodFence_NE.png",
-        "file": "./castle/wallNarrowWoodFence.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 43,
-        "name": "towerSquareMidOpenHalf",
-        "icon": "/castle/isometric/towerSquareMidOpenHalf_NE.png",
-        "file": "./castle/towerSquareMidOpenHalf.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 44,
-        "name": "siegeBallista",
-        "icon": "/castle/isometric/siegeBallista_NE.png",
-        "file": "./castle/siegeBallista.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 45,
-        "name": "towerTop",
-        "icon": "/castle/isometric/towerTop_NE.png",
-        "file": "./castle/towerTop.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 46,
-        "name": "towerBase",
-        "icon": "/castle/isometric/towerBase_NE.png",
-        "file": "./castle/towerBase.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 47,
-        "name": "flagWhite",
-        "icon": "/castle/isometric/flagWhite_NE.png",
-        "file": "./castle/flagWhite.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 48,
-        "name": "gate",
-        "icon": "/castle/isometric/gate_NE.png",
-        "file": "./castle/gate.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 49,
-        "name": "towerTopRoof",
-        "icon": "/castle/isometric/towerTopRoof_NE.png",
-        "file": "./castle/towerTopRoof.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 50,
-        "name": "stairsStone",
-        "icon": "/castle/isometric/stairsStone_NE.png",
-        "file": "./castle/stairsStone.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 51,
-        "name": "bridge",
-        "icon": "/castle/isometric/bridge_NE.png",
-        "file": "./castle/bridge.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 52,
-        "name": "wallCorner",
-        "icon": "/castle/isometric/wallCorner_NE.png",
-        "file": "./castle/wallCorner.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 53,
-        "name": "towerBalcony",
-        "icon": "/castle/isometric/towerBalcony_NE.png",
-        "file": "./castle/towerBalcony.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 54,
-        "name": "wallNarrowGate",
-        "icon": "/castle/isometric/wallNarrowGate_NE.png",
-        "file": "./castle/wallNarrowGate.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 55,
-        "name": "flagBlue",
-        "icon": "/castle/isometric/flagBlue_NE.png",
-        "file": "./castle/flagBlue.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 56,
-        "name": "wallPillar",
-        "icon": "/castle/isometric/wallPillar_NE.png",
-        "file": "./castle/wallPillar.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 57,
-        "name": "stairsStoneSlant",
-        "icon": "/castle/isometric/stairsStoneSlant_NE.png",
-        "file": "./castle/stairsStoneSlant.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 58,
-        "name": "shieldBlue",
-        "icon": "/castle/isometric/shieldBlue_NE.png",
-        "file": "./castle/shieldBlue.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 59,
         "name": "wallToNarrow",
         "icon": "/castle/isometric/wallToNarrow_NE.png",
-        "file": "./castle/wallToNarrow.glb",
-        "connections": {
-            "xPos": [],
-            "xNeg": [],
-            "yPos": [],
-            "yNeg": [],
-            "zPos": [],
-            "zNeg": []
-        },
-        "rotation": 1
-    },
-    {
-        "id": 60,
-        "name": "flagBlueWide",
-        "icon": "/castle/isometric/flagBlueWide_NE.png",
-        "file": "./castle/flagBlueWide.glb",
+        "file": "/castle/wallToNarrow.glb",
         "connections": {
             "xPos": [],
             "xNeg": [],

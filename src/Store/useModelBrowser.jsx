@@ -7,6 +7,8 @@ export default create(devtools(subscribeWithSelector( (set)=>{
         selectedModelFile:"",
         selectedRotation: 0,
         cubeSpace:[],
+        connections: null,
+        propagationStack : [],
         setSelectedIndex: (index)=>
         {
             set((state)=>{
@@ -34,12 +36,33 @@ export default create(devtools(subscribeWithSelector( (set)=>{
                 useModelStore.setState({cubeSpace: cubeSpace})
                 return { cubeSpace: cubeSpace}
             })
+        },
+        setConnections: (connections)=>
+        {
+            set((state)=>{
+                useModelStore.setState({connections: connections})
+                return { connections: connections}
+            })
+        }
+        ,
+        setPropagationStack: (propagationStack)=>
+        {
+            set((state)=>{
+                useModelStore.setState({propagationStack: propagationStack})
+                return { propagationStack: propagationStack}
+            })
         }
     }
 })))
 //useModelBrowser((state) => state.selectedModelFile)
 // Non Reactive Store
-export  const useModelStore = create(() => ({  selectedModel: -1,selectedModelFile:"", cubeSpace:[]}));
+export  const useModelStore = create(() => ({  selectedModel: -1,
+        selectedModelFile:"", 
+        cubeSpace:[], 
+        selectedRotation:0,
+        connections:null,
+        propagationStack:  []
+        }));
 
 
 
