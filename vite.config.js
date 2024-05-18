@@ -10,10 +10,9 @@ export default {
     root: 'src/',
     publicDir: "../public/",
     base: './',
-    server:
-    {
-        host: true,
-        open: !isCodeSandbox // Open if it's not a CodeSandbox
+    server: {
+        host: '0.0.0.0',
+        port: 3000,
     },
     build:
     {
